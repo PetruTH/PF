@@ -195,3 +195,8 @@ patratePozImp1 x = do
     if mod (snd y) 2 == 1 then
         return ((fst y) * (fst y))
     else []
+    
+primMonad x = do
+    if (length (factori x)) > 2 then
+        return False
+    else return True
